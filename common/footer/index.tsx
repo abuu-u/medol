@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ComponentType, PropsWithChildren } from 'react'
 import Button from '../button'
+import bg from './footer-bg.png'
 import styles from './styles.module.scss'
 
 interface Properties {}
@@ -12,6 +13,8 @@ interface Properties {}
 const Footer: ComponentType<PropsWithChildren<Properties>> = () => {
   return (
     <footer className={styles.footer}>
+      <Image className={styles.footer__bg} src={bg} alt="" />
+
       <div className={styles.top}>
         <div className={styles.top__left}>
           <div className={styles.top__top}>

@@ -58,7 +58,7 @@ const Header: ComponentType<PropsWithChildren<Properties>> = () => {
           </Link>
 
           <label className={styles['top__search']} htmlFor="search">
-            <span className={styles['top__svg-wrapper']}>
+            <span className={styles['top__svg-wrapper']} id="search">
               <svg fill="none" viewBox="0 0 26 26">
                 <path
                   fill="#0D4C93"

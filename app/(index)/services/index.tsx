@@ -2,6 +2,7 @@ import Button from '@/common/button'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ComponentType, PropsWithChildren } from 'react'
+import bg from './bg.png'
 import service1 from './service-1.png'
 import service2 from './service-2.png'
 import service3 from './service-3.png'
@@ -33,6 +34,8 @@ const Services: ComponentType<PropsWithChildren<Properties>> = () => {
       <h2 className={styles.services__header}>УСЛУГИ</h2>
 
       <ul className={styles.list}>
+        <Image className={styles.list__bg} src={bg} alt="" />
+
         {services.map(({ title, text, img }, index) => (
           <li className={styles.item} key={index}>
             <Image className={styles.img} src={img} alt={title} />
