@@ -1,0 +1,83 @@
+.button {
+  @include roboto-medium;
+  display: inline-block;
+
+  min-width: 270px;
+  padding: 21px 15px;
+
+  font-size: 24px;
+
+  color: #fff;
+  text-align: center;
+
+  background: linear-gradient(
+    90deg,
+    $color-primary,
+    $color-secondary,
+    $color-secondary
+  );
+
+  background-size: 200%;
+  border-radius: 35px;
+  opacity: 0.9;
+
+  transition: 0.3s;
+
+  &.small {
+    padding: 11px 15px;
+  }
+
+  &:hover {
+    background-position: 100%;
+  }
+}
+
+.secondary {
+  @include roboto-regular;
+  display: inline-flex;
+
+  gap: 5px;
+
+  align-items: center;
+
+  font-size: 24px;
+  color: $color-primary;
+
+  transition: 0.3s;
+
+  &:hover {
+    color: $color-secondary;
+  }
+
+  & svg {
+    width: 30px;
+    height: 30px;
+
+    fill: currentcolor;
+  }
+}
+
+.accent {
+  @include roboto-regular;
+  display: inline-flex;
+
+  gap: 5px;
+
+  align-items: center;
+
+  font-size: 24px;
+  color: $color-secondary;
+
+  transition: 0.3s;
+
+  &:hover {
+    color: $color-primary;
+  }
+
+  & svg {
+    width: 30px;
+    height: 30px;
+
+    fill: currentcolor;
+  }
+}

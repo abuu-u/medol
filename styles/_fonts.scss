@@ -1,0 +1,24 @@
+@mixin roboto-regular {
+  font-family: var(--roboto);
+  font-weight: 400;
+}
+
+@mixin roboto-medium {
+  font-family: var(--roboto);
+  font-weight: 500;
+}
+
+@mixin roboto-light {
+  font-family: var(--roboto);
+  font-weight: 300;
+}
+
+@mixin montserrat-regular {
+  font-family: var(--montserrat);
+  font-weight: 400;
+}
+
+@mixin montserrat-medium {
+  font-family: var(--montserrat);
+  font-weight: 500;
+}

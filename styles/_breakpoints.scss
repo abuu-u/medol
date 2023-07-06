@@ -1,0 +1,6 @@
+$mobile-s: 512px;
+$mobile: 768px;
+$tablet: 1280px;
+$mobile-s-breakpoint: '(max-width: #{$mobile-s})';
+$mobile-breakpoint: '(max-width: #{$mobile})';
+$tablet-breakpoint: '(max-width: #{$tablet})';

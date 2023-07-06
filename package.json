@@ -12,11 +12,27 @@
     "@types/node": "20.3.3",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
+    "embla-carousel-autoplay": "8.0.0-rc07",
+    "embla-carousel-react": "8.0.0-rc07",
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.8",
     "next": "13.4.8",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-unicorn": "^47.0.0",
+    "postcss": "^8.4.24",
+    "prettier": "^2.8.8",
+    "sass": "^1.63.6",
+    "stylelint": "^15.9.0",
+    "stylelint-config-css-modules": "^4.2.0",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-recess-order": "^4.2.0",
+    "stylelint-config-standard-scss": "^10.0.0",
+    "stylelint-prettier": "^3.0.0"
   }
 }

@@ -1,0 +1,174 @@
+.header {
+  @include container;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 111;
+
+  width: 100%;
+}
+
+.nav {
+  padding: 50px 0;
+}
+
+.top {
+  display: flex;
+
+  align-items: center;
+
+  margin-bottom: 45px;
+
+  &__svg-wrapper {
+    display: flex;
+
+    gap: 10px;
+
+    align-items: center;
+
+    padding: 13px;
+
+    font-size: 12px;
+    color: $color-primary;
+    text-align: center;
+
+    background-color: #fff;
+    border-radius: 25px;
+  }
+
+  & svg {
+    width: 24px;
+    height: 24px;
+
+    fill: currentcolor;
+  }
+
+  &__address,
+  &__phone {
+    display: flex;
+
+    gap: 20px;
+
+    align-items: center;
+  }
+
+  &__left-text {
+    font-size: 16px;
+
+    color: #5a5a5a;
+    letter-spacing: 0.4px;
+    white-space: pre-wrap;
+
+    &[href],
+    & a {
+      transition: 0.3s;
+
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+
+  &__address {
+    margin-right: 41px;
+  }
+
+  &__phone {
+    margin-right: 86px;
+  }
+
+  &__logo {
+    flex-shrink: 0;
+
+    margin-right: 139px;
+  }
+
+  &__search {
+    margin-right: 57px;
+
+    cursor: pointer;
+  }
+
+  &__facebook {
+    margin-right: 51px;
+  }
+
+  &__lang {
+    cursor: pointer;
+
+    & svg {
+      border-radius: 12px;
+    }
+
+    & > *:last-child {
+      width: 11px;
+      height: 11px;
+    }
+  }
+}
+
+.bottom {
+  @include roboto-regular;
+  display: flex;
+
+  font-size: 20px;
+
+  color: $color-primary;
+  text-transform: uppercase;
+
+  background-color: #fff;
+  border-radius: 35px;
+
+  &__link {
+    position: relative;
+
+    flex-grow: 1;
+
+    padding: 20px 0;
+
+    text-align: center;
+
+    transition: 0.3s;
+
+    &:not(:last-child)::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      display: inline-block;
+
+      width: 2px;
+      height: 100%;
+
+      content: '';
+
+      background-color: #f2f2f2;
+    }
+
+    &.active,
+    &:hover {
+      color: $color-secondary;
+    }
+
+    &.active {
+      &::before {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+
+        width: 12px;
+        height: 12px;
+
+        content: '';
+
+        background-color: $color-secondary;
+        border-radius: 50%;
+      }
+
+      &:last-child::before {
+        right: unset;
+        left: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+@use '/styles/breakpoints' as *;
+
+@mixin container {
+  padding: 0 max(calc(50% - 680px), 20px);
+}
